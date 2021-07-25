@@ -1,3 +1,6 @@
+$ani-speed: 2s;
+$ani-delay: 1s;
+
 .arrow {
     opacity: 0;
     position: absolute;
@@ -8,10 +11,10 @@
 }
 
 .arrow-first {
-    animation: arrow-movement alternate infinite;
+    animation: arrow-movement $ani-speed ease-in-out infinite;
 }
 .arrow-second {
-    animation: arrow-movement alternate infinite;
+    animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
 }
 
 .arrow:before,
@@ -21,8 +24,8 @@
     display: block;
     height: 3px; 
     position: absolute;
-        top: 0;
-        left: 0;
+        top: 90%;
+        left: 50%;
     width: 30px;
 }
 
@@ -36,6 +39,7 @@
     transform-origin: top right;
 }
 
+// Animation
 @keyframes arrow-movement {
     0% { 
         opacity: 0;
@@ -49,19 +53,4 @@
     }
 }
 
-.bi-caret-down {
-    position: absolute;
-    top: 90%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-}
 
-.bi-button {
-    text-decoration: none;
-    color: white;
-}
-
-.bi-caret-down:hover {
-    cursor: pointer;
-    color: white;
-}

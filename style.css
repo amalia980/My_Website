@@ -87,7 +87,22 @@ nav h3 {
     height: 3rem;
 }
 
+.bi-caret-down {
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
 
+.bi-button {
+    text-decoration: none;
+    color: white;
+}
+
+.bi-caret-down:hover {
+    cursor: pointer;
+    color: white;
+}
 
 
 
