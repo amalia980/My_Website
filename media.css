@@ -1,0 +1,44 @@
+
+/*laptop / desktop */
+@media only screen and (width: 1920px) {
+
+}
+
+/*laptop*/
+@media only screen and (width: 1366px) {
+
+}
+
+/*tablet*/
+@media only screen and (width: 768px) {
+
+}
+
+/*pixel 2*/
+@media only screen and (width: 411px) {
+
+}
+
+/*MOBILE*/
+@media only screen and (width: 375px) {
+
+}
+
+/*MOBILE*/
+@media only screen and (width: 360px) {
+ nav {
+     display: none;
+ }
+
+ #select-container {
+     display: none;
+ }
+
+ .navbar navbar-expand-lg navbar-dark bg-dark {
+     position: fixed;
+ }
+
+ .head-pic {
+    
+ }
+}
